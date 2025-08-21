@@ -1,0 +1,39 @@
+{
+  "pdf_directory": "sample_data/pdfs",
+  "txt_directory": "sample_data/txt_files",
+  "template_file": "sample_data/MineSitesQuebec_Vorlage - Test.csv",
+  "output_file": "output/test_extraction_simple.csv",
+  "deepseek_api_key": "${DEEPSEEK_API_KEY}",
+  "gemini_api_key": "${GEMINI_API_KEY}",
+  "openrouter_api_key": "${OPENROUTER_API_KEY}",
+  "max_files": "3",
+  "primary_api": "DeepSeek",
+  "backup_api": "Gemini",
+  "use_openrouter_for_all": true,
+  "use_chunks": true,
+  "hardware_optimization": true,
+  "timeout": "120",
+  "retries": "2",
+  "api_call_delay": "1.0",
+  "vision_api_priority": "Gemini",
+  "column_separator": ";",
+  "cell_separator": "; ",
+  "csv": {
+    "separators": {
+      "column": ";",
+      "cell": "; ",
+      "line_terminator": "\n"
+    },
+    "quoting": {
+      "quote_char": "\"",
+      "escape_char": "\"",
+      "double_quote": true
+    },
+    "encoding": "utf-8"
+  },
+  "extraction_strategy": "hybrid",
+  "max_retries": 3,
+  "backoff_base_seconds": 1,
+  "backoff_max_seconds": 60,
+  "backoff_jitter": 0.1
+}
